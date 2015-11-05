@@ -11,20 +11,34 @@
 </head>
 <body>
     
-    <div class="col-xs-12 col-sm-6">
-        Container for image
-    </div>
-    <div class="col-xs-12 col-sm-6">
-        <div id="home-name">
-            Travis Elkins
+    <div class="row">
+        <div class="col-xs-12 col-sm-6" id="home-image-div">
+            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+                <img src="~/Content/images/homeImage.jpg" class="img-rounded img-responsive" /><!-- to do: resize this huge image later-->
+            </div>
         </div>
-        <div>
-            <ul>
-                <li>Pursuing a degree in Computer Science at Indiana University Southeast</li>
-                <li>Currently working as an IT Intern at ZirMed</li>
-                <li>Part time member of the Air National Guard</li>
-                <li>Married to the woman of my dreams!</li>
-            </ul>
+        <div class="col-xs-12 col-sm-6" id="home-info-div">
+            <div id="home-name">
+                Travis Elkins
+            </div>
+            <div id="home-personal-info">
+                <span>Pursuing a degree in Computer Science at Indiana University Southeast</span><br />
+                <span>Currently working as an IT Intern at ZirMed</span><br />
+                <span>Part time member of the Air National Guard</span><br />
+                <span>Married to the woman of my dreams!</span>
+            </div>
+         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 text-center">
+            <a class="btn btn-link home-nav-button" href="/about" role="button">About</a>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+            <a class="btn btn-link home-nav-button" href="/contact" role="button">Contact</a>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+            <a class="btn btn-link home-nav-button" href="/resume" role="button">Resume</a>
         </div>
     </div>
 </body>
