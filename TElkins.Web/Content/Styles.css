@@ -87,11 +87,13 @@ body{
 	margin-bottom:0px;
 }
 
-
+#about-self-image {
+    margin:auto;
+    margin-top:20px;
+}
 
 #aboutMe{
 	
-	background-color:#EEEEEE;
     font-size:18px;
 }
 
@@ -100,12 +102,20 @@ body{
 }
 #myStory{
 	font-size:65px;
-	background-color:#ACAC9B;
 	text-align: center;
 }
 
+
 #quotes {
     font-size:18px;
+    
+}
+#quotesDiv {
+    background-color:#F8F8F8;
+}
+
+.margin-to-get-below-navbar {
+    margin-top:50px;
 }
 /* Sticky footer
 --------------------------------------*/
