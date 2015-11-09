@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Travis Elkins";
-    }
+}
 <!DOCTYPE html>
 
 <html>
@@ -9,37 +9,48 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
-<body>
-    
-    <div class="row">
-        <div class="col-xs-12 col-sm-6" id="home-image-div">
-            <div class="col-xs-12 col-sm-9 col-sm-offset-1">
-                <img src="~/Content/images/homeImage.jpg" class="img-rounded img-responsive" /><!-- to do: resize this huge image later-->
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6" id="home-info-div">
-            <div id="home-name">
-                Travis Elkins
-            </div>
-            <div id="home-personal-info">
-                <span>Pursuing a degree in Computer Science at Indiana University Southeast</span><br />
-                <span>Currently working as an IT Intern at ZirMed</span><br />
-                <span>Part time member of the Air National Guard</span><br />
-                <span>Married to the woman of my dreams!</span>
-            </div>
-         </div>
-    </div>
+    <body>
+            <div class="jumbotron">
+                <div class="container">
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-4 text-center">
-            <a class="btn btn-link home-nav-button" href="/about" role="button">About</a>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-            <a class="btn btn-link home-nav-button" href="/contact" role="button">Contact</a>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-            <a class="btn btn-link home-nav-button" href="/resume" role="button">Resume</a>
-        </div>
-    </div>
-</body>
+                    <div class="col-lg-12">
+
+                        <h1> Travis Elkins </h1>
+                        <br><br>
+
+                        <div class="col-lg-4 col-lg-offset-3 col-md-3 col-md-offset-4 col-sm-3  col-sm-offset-3">
+                            <a class="btn btn-link btn-lrg" href="/about" role="button" id="buttonAboutMe"><strong>About Me</strong></a>
+                        </div>
+
+                        <div class="col-lg-3 xs-col-3">
+                            <a class="btn btn-link btn-lrg" href="/contact" role="button" id="buttonContact"><strong>Contact</strong></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12>
+                <div class="center-block">
+                    <h2 id="intro"> A Brief Introduction </h2>
+                    <p> _________________________________________</p>
+                 
+                 <div id="home-info">
+                     <p> I am 24 years of age</p>
+                     <p> I am happily married</p>
+                     <p> Currently studying Computer Science at Indiana University Southeast</p>
+                     <p> I have a passion for learning, I feel it is essential to living</p>
+                     <p> I am not afraid to try new things</p>
+                 </div>
+                    
+
+                </div>
+            </div>
+
+
+
+    </body>
 </html>

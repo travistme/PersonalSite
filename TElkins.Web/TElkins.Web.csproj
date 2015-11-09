@@ -109,7 +109,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\af.jpg" />
+    <Content Include="Content\images\background.png" />
+    <Content Include="Content\images\home-wallpaper.jpg" />
     <Content Include="Content\images\homeImage.jpg" />
+    <Content Include="Content\images\jumbotronwedding2.jpg" />
+    <Content Include="Content\images\jumbotronwedding3.jpg" />
+    <Content Include="Content\images\mewedding.jpg" />
+    <Content Include="Content\images\mewedding.png" />
     <Content Include="Content\Styles.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
