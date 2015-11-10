@@ -17,7 +17,10 @@ h3{
 	color: white;
 	text-align: center;
 }
-
+nav {
+    max-width:1500px;
+    margin:auto;
+}
 #home-info p{
     font-size:18px;
     text-align:center;
