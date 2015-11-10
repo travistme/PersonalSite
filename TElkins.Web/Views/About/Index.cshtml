@@ -6,9 +6,9 @@
     $(function(){
         $('.storyList').click(function () {
             var title = this.id;
-            alert(title);
-            $('.storyDiv').hide();
-            $(title + 'Div').fadeIn(200);
+            var title = title + "Div";
+            $('.storyDiv').fadeOut(200);
+            $('#' + title).fadeIn(200);
         })
     });
 </script>
@@ -74,6 +74,9 @@
 
     </div>
 </div>
+
+
+
             <div class="col-md-4">
                 <img id="about-self-image" src="~/Content/images/mewedding.jpg" class="img-responsive img-rounded" />
 

@@ -1,12 +1,17 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization;
+
+<!DOCTYPE html>
 
 <html>
 <head>
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    @*<link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />*@
     <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/Styles.css" rel="stylesheet" />
+   @* <link href="~/Content/Styles.css" rel="stylesheet" />*@
     <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css");
+    @Scripts.Render("~/bundles/clientfeaturescripts");
+    @RenderSection("Scripts", false);
 </head>
 <body>
    
@@ -40,8 +45,8 @@
     
     
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
-    @RenderSection("Scripts", false);
+
+    
 </body>
 
 
