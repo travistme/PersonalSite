@@ -2,76 +2,83 @@
 @{
     ViewBag.Title = "About";
 }
+<script type="text/javascript">
+    $(function(){
+        $('.storyList').click(function () {
+            var title = this.id;
+            alert(title);
+            $('.storyDiv').hide();
+            $(title + 'Div').fadeIn(200);
+        })
+    });
+</script>
 
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-
-
-
-<body>
-
-<div class="jumbotron" id="aboutjumbotron">
-    <div class="container">
+    <div class="jumbotron" id="aboutjumbotron">
+        <div class="container">
+        </div>
     </div>
-</div>
+
+    <div class="col-md-8" id="aboutMe">
+        <div class="row">
+            <h2 id="myStoryTitle"> My Story </h2>
+
+            <div class="col-xs-2 col-xs-offset-5 list-group">
+                <button type="button" class="list-group-item storyList" id="airForce"><p class="text-center">Air Force</p></button>
+                <button type="button" class="list-group-item storyList" id="school"><p class="text-center">School</p></button>
+                <button type="button" class="list-group-item storyList" id="work"><p class="text-center">Work</p></button>
+                <button type="button" class="list-group-item storyList" id="personalLife"><p class="text-center">Personal Life</p></button>
+            </div>
+        </div>
 
 
 
-<div class="col-md-8" id="aboutMe">
-
-    <h2 style="padding-bottom:20px;"> My Story </h2>
 
 
-    <p>
-        Where to start?! Early 2010 I decided I wanted to get out of college and join the military. Nine months later I was on a plane
-        to Lackland Air Force Base with no idea what to expect. I can honestly say the decision to halt my education for the time being
-        and join the the United States Air Force was the best decision of my life thus far. Whilst in the Air Force I learned a lot of things,
-        just a few of them being:
-    </p> <br /><br />
-
-    <ul>
-        <li>Hard work trumps everything</li>
-        <li>Communication skills are very important</li>
-        <li>If you are on time, you are late. If you are 15 minutes early, you are on time.</li>
-        <li>Moving 500 miles away from home makes you grow up... fast</li>
-        <li>
-            Don't be afraid to take on work that is unknown to you,
-            take that opportunity to learn something new
-        </li>
-    </ul><br />
 
 
-    <p>
-        The last ten months of my enlistment I was lucky enough to become a Unit Deployment Manager. While taking on this new, completely different
-        job than the one I had previously I got experience in heavy, heavy workload. Something about being in charge of 220 peoples readiness to
-        deploy brings in a lot of work. I had a great Commander that pushed me, she expected a lot out of me and for that I am grateful. With her I
-        learned to pay attention to minute details, every detail matters when it comes to work.
-    </p><br /><br />
+    <div class="row storyDiv"  id="airForceDiv">
+        <p>
+            Where to start?! Early 2010 I decided I wanted to get out of college and join the military. Nine months later I was on a plane
+            to Lackland Air Force Base with no idea what to expect. I can honestly say the decision to halt my education for the time being
+            and join the the United States Air Force was the best decision of my life thus far. Whilst in the Air Force I learned a lot of things,
+            just a few of them being:
+        </p> <br /><br />
 
-    <p>
-        This brings us to today, I am currently attending Indiana University Southeast pursuing a Bachelor of Science in Computer Science. I have always
-        had an affinity for computers, mostly for video games. But, as I have gotten older I have become more and more interested in the process of
-        creating, rather than only playing. While in the Air Force I was also a mechanic on heavy aircraft, I enjoyed seeing a problem,
-        figuring out what was wrong and fixing it. What I didn't know is how much I would dislike fixing things in 100 degree weather. I love <b>solving problems</b>,
-        I love <b>creating</b>, and I love seeing my <b>hard work</b> come into fruition.
-    </p>
+        <ul>
+            <li>Hard work trumps everything</li>
+            <li>Communication skills are very important</li>
+            <li>If you are on time, you are late. If you are 15 minutes early, you are on time.</li>
+            <li>Moving 500 miles away from home makes you grow up... fast</li>
+            <li>
+                Don't be afraid to take on work that is unknown to you,
+                take that opportunity to learn something new
+            </li>
+        </ul><br />
 
-</div>
 
-    <div class="col-md-4" style="background-color:#F8F8F8;">
-        <img id="about-self-image" src="~/Content/images/mewedding.jpg" class="img-responsive img-rounded" />
-        @*<h2 style="padding-top:20px; padding-bottom:20px;"> Quotes to Live By </h2>*@
-        <p id="quotes">
-            Once you decide on your occupation... you must immerse yourself in your work. You have to fall in love with your work. Never complain about your job.
-            You must dedicate your life to mastering your skill. That's the secret of success... and is the key to being regarded honorably." - Jiro Ono
+        <p>
+            The last ten months of my enlistment I was lucky enough to become a Unit Deployment Manager. While taking on this new, completely different
+            job than the one I had previously I got experience in heavy, heavy workload. Something about being in charge of 220 peoples readiness to
+            deploy brings in a lot of work. I had a great Commander that pushed me, she expected a lot out of me and for that I am grateful. With her I
+            learned to pay attention to minute details, every detail matters when it comes to work.
+        </p><br /><br />
+
+        <p>
+            This brings us to today, I am currently attending Indiana University Southeast pursuing a Bachelor of Science in Computer Science. I have always
+            had an affinity for computers, mostly for video games. But, as I have gotten older I have become more and more interested in the process of
+            creating, rather than only playing. While in the Air Force I was also a mechanic on heavy aircraft, I enjoyed seeing a problem,
+            figuring out what was wrong and fixing it. What I didn't know is how much I would dislike fixing things in 100 degree weather. I love <b>solving problems</b>,
+            I love <b>creating</b>, and I love seeing my <b>hard work</b> come into fruition.
         </p>
-    </div>
-</body>
 
-</html>
+    </div>
+</div>
+            <div class="col-md-4">
+                <img id="about-self-image" src="~/Content/images/mewedding.jpg" class="img-responsive img-rounded" />
+
+                <p id="quotes">
+                    Once you decide on your occupation... you must immerse yourself in your work. You have to fall in love with your work. Never complain about your job.
+                    You must dedicate your life to mastering your skill. That's the secret of success... and is the key to being regarded honorably." - Jiro Ono
+                </p>
+            </div>
