@@ -30,7 +30,6 @@ nav {
 	background-position:center;
 	width:100%;
 	color:white;
-	margin-top:50px;
 	min-height: 500px;
 	padding-top:400px;
     margin-bottom:0px;
@@ -41,7 +40,7 @@ body{
     margin-bottom:60px;
     margin:auto;
 	background-color: #F8F8F8;
- 
+    padding-top:30px;
 }
 
 /*  Home Page ----------------------------- */
@@ -92,7 +91,6 @@ body{
 	background-position:center;
 	width:100%;
 	color:white;
-	margin-top:50px;
 	min-height: 500px;
 	padding-top:600px;
 	margin-bottom:0px;
