@@ -113,7 +113,9 @@ body{
 #quotesDiv {
     background-color:#F8F8F8;
 }
-
+div div #contact-table {
+    margin-top:30px;
+}
 .margin-to-get-below-navbar {
     margin-top:50px;
 }
