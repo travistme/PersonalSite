@@ -1,153 +1,193 @@
 /* ALL PAGES */
-h1{
-	color:white;
-	font-size: 54px;
-	text-align: center;
+h1 {
+    color: white;
+    font-size: 54px;
+    text-align: center;
 }
 
-h2{
-	font-family:Arial Arial, Helvetica, sans-serif;
-	color:black;
-	font-size: 50px;
-	text-align: center;
-	
+h2 {
+    font-family: Arial Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 50px;
+    text-align: center;
 }
 
-h3{
-	color: white;
-	text-align: center;
+h3 {
+    color: white;
+    text-align: center;
 }
 
 /* Layout ----------------------------- */
 nav {
-    max-width:1500px;
-    margin:auto;
+    max-width: 1500px;
+    margin: auto;
 }
 
-#homeJumbotron{
-	background-image: url('images/jumbotronwedding2.jpg');
-	background-size: cover;
-	background-position:center;
-	width:100%;
-	color:white;
-	min-height: 500px;
-    padding-bottom:500px;
-    margin-bottom:0px;
+#homeJumbotron {
+    background-image: url('images/jumbotronwedding2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    min-height: 500px;
+    padding-bottom: 500px;
+    margin-bottom: 0px;
 }
 
-body{
-    max-width:1500px;
-    margin-bottom:60px;
-    margin:auto;
-	background-color: #F8F8F8;
-    padding-top:30px;
+body {
+    max-width: 1500px;
+    margin-bottom: 60px;
+    margin: auto;
+    background-color: #F8F8F8;
+    padding-top: 30px;
 }
 
 /*  Home Page ----------------------------- */
-#home-info p{
-    font-size:16px;
-    text-align:center;
-    color:white;
-    position:relative;
-    top:400px;
+#home-info p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 150px;
 }
 
-#buttonAboutMe{
-	color: white;
-	height:45px;
-	width:100px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:18px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: white;
-	text-decoration: none;
-	text-align:center;
-	padding-left:5px;
-    position:relative;
-    top:400px;
-	
-	
+@media (min-width: 768px) {
+    #home-info p {
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        position: relative;
+        top: 400px;
+    }
 }
 
-#buttonContact{
-	color: white;
-	height:45px;
-	width:100px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:18px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: white;
-	text-align: center;
-	text-decoration: none;
-    position:relative;
-    top:400px;
-	
-	
+
+#buttonAboutMe {
+    color: white;
+    height: 45px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 5px;
+    position: relative;
+    top: 150px;
 }
 
-#homeName {
+
+
+@media (min-width: 768px) {
+    #buttonAboutMe {
+        color: white;
+        height: 45px;
+        width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 5px;
+        position: relative;
+        top: 400px;
+    }
 }
+
+#buttonContact {
+        color: white;
+        height: 45px;
+        width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        top: 150px;
+    }
+
+@media (min-width: 768px) {
+    #buttonContact {
+        color: white;
+        height: 45px;
+        width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        top: 400px;
+    }
+}
+
 
 /* About page */
-#aboutJumbotron{
-	background-image: url('images/af.jpg');
-	background-size: cover;
-	background-position:center;
-	width:100%;
-	color:white;
-	min-height: 500px;
-	padding-top:600px;
-	margin-bottom:0px;
+#aboutJumbotron {
+    background-image: url('images/af.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    min-height: 500px;
+    padding-top: 600px;
+    margin-bottom: 0px;
 }
 
 #aboutButtonGroup {
-  
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 #about-self-image {
-    margin:auto;
-    margin-top:20px;
+    margin: auto;
+    margin-top: 20px;
 }
 
-#aboutMe{
-	font-size:16px;
+#aboutMe {
+    font-size: 16px;
 }
 
-#aboutMe p {
-    font-size:16px;
-}
+    #aboutMe p {
+        font-size: 16px;
+    }
 
 
 .storyDiv {
-    display:none;
-    margin-top:50px;
+    display: none;
+    margin-top: 50px;
 }
 
 #storyRow {
-    margin:auto;
+    margin: auto;
 }
 /* Contact Page -------------------*/
 
 #contact-table {
-    margin-top:50px;
+    margin-top: 50px;
 }
 /* Sticky footer
 --------------------------------------*/
 
 html {
-    position:relative;
-    min-height:100%;
+    position: relative;
+    min-height: 100%;
 }
 
 
 #footer {
     position: absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 
 
