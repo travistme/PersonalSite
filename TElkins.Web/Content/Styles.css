@@ -31,7 +31,7 @@ nav {
 	width:100%;
 	color:white;
 	min-height: 500px;
-	padding-top:400px;
+    padding-bottom:500px;
     margin-bottom:0px;
 }
 
@@ -47,11 +47,13 @@ body{
 #home-info p{
     font-size:16px;
     text-align:center;
+    color:white;
+    position:relative;
+    top:400px;
 }
 
 #buttonAboutMe{
 	color: white;
-	
 	height:45px;
 	width:100px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -62,13 +64,14 @@ body{
 	text-decoration: none;
 	text-align:center;
 	padding-left:5px;
+    position:relative;
+    top:400px;
 	
 	
 }
 
 #buttonContact{
 	color: white;
-	
 	height:45px;
 	width:100px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -78,11 +81,14 @@ body{
 	border-color: white;
 	text-align: center;
 	text-decoration: none;
+    position:relative;
+    top:400px;
 	
 	
 }
 
-
+#homeName {
+}
 
 /* About page */
 #aboutJumbotron{
