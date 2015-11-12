@@ -24,7 +24,7 @@ nav {
     margin:auto;
 }
 
-.jumbotron{
+#homeJumbotron{
 	background-image: url('images/jumbotronwedding2.jpg');
 	background-size: cover;
 	background-position:center;
@@ -85,7 +85,7 @@ body{
 
 
 /* About page */
-#aboutjumbotron{
+#aboutJumbotron{
 	background-image: url('images/af.jpg');
 	background-size: cover;
 	background-position:center;
@@ -94,6 +94,11 @@ body{
 	min-height: 500px;
 	padding-top:600px;
 	margin-bottom:0px;
+}
+
+#aboutButtonGroup {
+  
+    margin-top:30px;
 }
 
 #about-self-image {
@@ -109,17 +114,19 @@ body{
     font-size:16px;
 }
 
-#myStory{
-	font-size:65px;
-	text-align: center;
-    
+
+.storyDiv {
+    display:none;
+    margin-top:50px;
 }
 
-
+#storyRow {
+    margin:auto;
+}
 /* Contact Page -------------------*/
 
 #contact-table {
-    margin-top:100px;
+    margin-top:50px;
 }
 /* Sticky footer
 --------------------------------------*/
@@ -139,3 +146,4 @@ html {
 
 
 
+/* Miscellaneous ---------------*/
