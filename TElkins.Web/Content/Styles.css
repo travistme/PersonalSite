@@ -156,11 +156,6 @@ body {
     font-size: 16px;
 }
 
-    #aboutMe p {
-        font-size: 16px;
-    }
-
-
 .storyDiv {
     display: none;
     margin-top: 50px;
@@ -202,3 +197,15 @@ html {
     background-color:#2E2E2E;
     color:white;
 }
+
+.white {
+    color:white;
+}
+
+a {
+    color:yellow;
+}
+
+    a:hover {
+        color:white;
+    }
