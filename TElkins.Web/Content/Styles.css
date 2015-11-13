@@ -99,19 +99,19 @@ body {
 }
 
 #buttonContact {
-        color: white;
-        height: 45px;
-        width: 100px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: white;
-        text-align: center;
-        text-decoration: none;
-        position: relative;
-        top: 150px;
-    }
+    color: white;
+    height: 45px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 150px;
+}
 
 @media (min-width: 768px) {
     #buttonContact {
