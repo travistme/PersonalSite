@@ -1,4 +1,5 @@
-﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+﻿
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -10,11 +11,21 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
-                <li><a href="@Url.Action("About", "Home")">About</a></li>
-                <li><a href="@Url.Action("Resume", "Home")">Resume</a></li>
-                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
-
+                <li @if (ViewBag.NavBarTab == "Home") {
+                    @: class="active" 
+                    }><a href="@Url.Action("Index", "Home")">Home</a></li>
+                
+                <li @if (ViewBag.NavbarTab == "About") {
+                    @: class="active"
+                }><a href="@Url.Action("About", "Home")">About</a></li>
+                
+                <li @if (ViewBag.NavbarTab == "Resume") {
+                    @: class="active"
+                }><a href="@Url.Action("Resume", "Home")">Resume</a></li>
+                
+                <li @if (ViewBag.NavbarTab == "Contact") {
+                    @: class="active"
+                    }><a href = "@Url.Action("Contact", "Home")">Contact</a></li>
             </ul>
 
         </div>
