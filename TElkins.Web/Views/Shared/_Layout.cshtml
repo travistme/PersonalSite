@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    
+
+    @Styles.Render("~/bundles/bootstrapcss")
+    @Styles.Render("~/bundles/bootstrap-themecss")
+    @Styles.Render("~/bundles/sitecss")
+    @RenderSection("pagecss", false)
 </head>
 <body>
 
@@ -18,9 +21,9 @@
         @RenderBody()
     </div>
 
-    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
 
-    @Scripts.Render("~/bundles/clientfeaturescripts")
+    @Scripts.Render("~/bundles/jqueryjs")
+    @Scripts.Render("~/bundles/bootstrapscripts")
     @RenderSection("scripts", false)
 
     @Html.Partial("~/Views/Shared/_GoogleAnalytics.cshtml")

@@ -1,0 +1,37 @@
+﻿/* About page */
+#aboutJumbotron {
+    background-image: url('images/af.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    min-height: 500px;
+    padding-top: 600px;
+    margin-bottom: 0px;
+}
+
+#aboutButtonGroup {
+    margin-top: 30px;
+}
+
+#about-self-image {
+    margin: auto;
+    margin-top: 20px;
+}
+
+#aboutMe {
+    font-size: 16px;
+}
+
+.storyDiv {
+    display: none;
+    margin-top: 50px;
+}
+
+.storyImage {
+    
+}
+
+#storyRow {
+    margin: auto;
+}
