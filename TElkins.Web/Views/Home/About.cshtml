@@ -3,17 +3,6 @@
     ViewBag.Title = "About";
     ViewBag.NavBarTab = "About";
 }
-<script type="text/javascript">
-    $(function () {
-        $('.storyList').click(function () {
-            var title = this.id;
-            var title = title + "Div";
-            $('.storyDiv').hide();
-            $('#' + title).fadeIn(500);
-        })
-    });
-</script>
-
 
 @*<div class="jumbotron" id="aboutJumbotron">
         <div class="container">
@@ -122,3 +111,15 @@
 </div>
 
 
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('.storyList').click(function () {
+                var title = this.id;
+                var title = title + "Div";
+                $('.storyDiv').hide();
+                $('#' + title).fadeIn(500);
+            })
+        });
+    </script>
+}
