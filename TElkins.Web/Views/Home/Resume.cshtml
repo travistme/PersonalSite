@@ -7,13 +7,46 @@
 
 <div class="col-sm-8 col-sm-offset-2">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3 list-group" id="aboutButtonGroup">
-        <button type="button" class="list-group-item storyList" id="2015"><p class="text-center">Information Technology Intern</p></button>
-        <button type="button" class="list-group-item storyList" id="2014"><p class="text-center">Web Developer Intern</p></button>
-        <button type="button" class="list-group-item storyList" id="2013"><p class="text-center">Unit Deployment Manager</p></button>
-        <button type="button" class="list-group-item storyList" id="2012"><p class="text-center">Hydraulic Systems Journeyman</p></button>
+        <button type="button" class="list-group-item storyList" id="ItIntern"><p class="text-center">Information Technology Intern</p></button>
+        <button type="button" class="list-group-item storyList" id="WebIntern"><p class="text-center">Web Developer Intern</p></button>
+        <button type="button" class="list-group-item storyList" id="Udm"><p class="text-center">Unit Deployment Manager</p></button>
+        <button type="button" class="list-group-item storyList" id="Hydraulics"><p class="text-center">Hydraulic Systems Journeyman</p></button>
     </div>
 </div>
 
 <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
     <p class="white">To view the PDF version of my resume click <a href="#" id="pdfLink">here</a>.</p>
 </div>
+
+<div class="row" id="storyRow">
+    <div class="col-xs-12">
+        <div class="storyDiv" id="ItInternDiv">
+            @Html.Partial("~/Views/Home/_ResumeItIntern.cshtml")
+        </div>
+
+        <div class="storyDiv" id="WebInternDiv">
+            @Html.Partial("~/Views/Home/_ResumeWebIntern.cshtml")
+        </div>
+
+        <div class="storyDiv" id="UdmDiv">
+            @Html.Partial("~/Views/Home/_ResumeUdm.cshtml")
+        </div>
+
+        <div class="storyDiv" id="HydraulicsDiv">
+            @Html.Partial("~/Views/Home/_ResumeHydraulics.cshtml")
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('.storyList').click(function () {
+                var title = this.id;
+                var title = title + "Div";
+                $('.storyDiv').hide();
+                $('#' + title).fadeIn(500);
+            })
+        });
+    </script>
+}
