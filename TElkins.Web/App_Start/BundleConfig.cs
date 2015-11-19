@@ -11,7 +11,7 @@ namespace TElkins.Web
 //            BundleTable.EnableOptimizations = true;
 //#endif
 
-            bundles.Add(new StyleBundle("~/bundles/sitecss")
+            bundles.Add(new StyleBundle("~/Content/sitecss")
                 .Include("~/Content/styles.css")
                 .Include("~/Content/homestyles.css")
                 .Include("~/Content/aboutstyles.css")
