@@ -35,3 +35,9 @@
 #storyRow {
     margin: auto;
 }
+
+#panelTextDiv {
+    margin-top:auto;
+    margin-bottom:auto;
+    vertical-align:middle;
+}
